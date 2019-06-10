@@ -1,0 +1,2 @@
+TOKEN = '818597287:AAFWAFQpYiw3U48JXtKkGPscf71UwupThrk'
+APP_NAME = 'Domingo24-bot'
