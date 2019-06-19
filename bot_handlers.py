@@ -51,6 +51,8 @@ def repeat_all_messages(message):
     elif message.text == '/check':
         time.sleep(1)
         bot.send_message(message.chat.id, messages.CHECK, parse_mode='HTML')
+    else:
+        bot.send_message(message.chat.id, message, parse_mode='HTML')
 
     if message.from_user.username == None:
         bot.send_message(771112471, message.text + '    *****    ' +
