@@ -19,6 +19,7 @@ def send_welcome(message):
         bot.send_message(771112471, message.text + '    *****    @' +
                          message.from_user.username + '   *****   ' + str(message.chat.id))
 
+
 @bot.message_handler(content_types=["text"])  # Любой текст
 def repeat_all_messages(message):
 
@@ -45,12 +46,13 @@ def repeat_all_messages(message):
 
     elif message.text == '/buy2_1':
         bot.send_message(message.chat.id, messages.BUY2_1 + mes, parse_mode='HTML')
-    elif message.text == '/buy3_2':
-        bot.send_message(message.chat.id, messages.BUY3_2 + mes, parse_mode='HTML')
+    elif message.text == '/buy3_1':
+        bot.send_message(message.chat.id, messages.BUY3_1 + mes, parse_mode='HTML')
 
     elif message.text == '/check':
         time.sleep(1)
         bot.send_message(message.chat.id, messages.CHECK, parse_mode='HTML')
+
     else:
         bot.send_message(message.chat.id, messages.START, parse_mode='HTML')
 
