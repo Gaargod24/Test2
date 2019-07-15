@@ -39,11 +39,15 @@ def repeat_all_messages(message):
     elif message.text == '/city1':
         bot.send_message(message.chat.id, messages.CITY1, parse_mode='HTML')
 
+    elif message.text == '/buy1':
+        bot.send_message(message.chat.id, messages.BUY1, parse_mode='HTML')
     elif message.text == '/buy2':
         bot.send_message(message.chat.id, messages.BUY2, parse_mode='HTML')
     elif message.text == '/buy3':
         bot.send_message(message.chat.id, messages.BUY3, parse_mode='HTML')
 
+    elif message.text == '/buy1_1':
+        bot.send_message(message.chat.id, messages.BUY1_1 + mes, parse_mode='HTML')
     elif message.text == '/buy2_1':
         bot.send_message(message.chat.id, messages.BUY2_1 + mes, parse_mode='HTML')
     elif message.text == '/buy3_1':
